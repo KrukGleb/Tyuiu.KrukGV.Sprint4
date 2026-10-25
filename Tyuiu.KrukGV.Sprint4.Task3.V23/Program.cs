@@ -1,5 +1,6 @@
 ﻿
 using Tyuiu.KrukGV.Sprint4.Task3.V23.Lib;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Tyuiu.KrukGV.Sprint4.Task3.V23
 {
@@ -19,37 +20,34 @@ namespace Tyuiu.KrukGV.Sprint4.Task3.V23
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Дан двумерный целочисленный массив 5 на 5 элементов, заполненный        *");
-            Console.WriteLine("* статическими значениями в диапазоне от 2 до 8. Подсчитайте количество   *");
-            Console.WriteLine("* четных элементов во всем массиве.                                       *");
+            Console.WriteLine("* значениями с клавиатуры в диапазоне от 1 до 7. Найдите сумму нечетных   *");
+            Console.WriteLine("* элементов массива.                                                      *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-
-            Console.Write("Введите количество строк в массиве: ");
-            int rows = Convert.ToInt32(Console.ReadLine());
-
-            Console.Write("Введите количество столбцов в массиве: ");
-            int columns = Convert.ToInt32(Console.ReadLine());
-
-            int[,] mtrx = new int[rows, columns];
-
-            for (int i = 0; i < rows; i++)
+            int[,] array = new int[,]
             {
-                for (int j = 0; j < columns; j++)
-                {
-                    Console.Write($"Введите {i},{j} элемент массива: ");
-                    mtrx[i, j] = Convert.ToInt32(Console.ReadLine());
-                }
+            { 7, 5, 5, 6, 7 },
+            { 8, 7, 8, 4, 3 },
+            { 5, 6, 7, 8, 3 },
+            { 4, 2, 3, 6, 4 },
+            { 5, 2, 4, 2, 3 }
+            };
+            for (int i = 0; i < array.GetLength(0); i++)
+            {
+                for (int j = 0; j < array.GetLength(1); j++)
+                    Console.Write(array[i, j]);
                 Console.WriteLine();
             }
-        
+
+
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            int res = ds.Calculate(mtrx);
+            int res = ds.Calculate(array);
             Console.WriteLine(res);
             
             Console.ReadKey();
