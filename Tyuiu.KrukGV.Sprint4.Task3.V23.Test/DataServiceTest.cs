@@ -10,10 +10,18 @@ namespace Tyuiu.KrukGV.Sprint4.Task3.V23.Test
         public void ValidExpression()
         {
             DataService ds = new DataService();
-            bool[] res = ds.GetCompareOperations(1065, 755);
-            bool[] ans = { true, false, false, false, false, false };
+            
+            int[,] array = new int[,]
+            {
+            { 7, 5, 5, 6, 7 }, // 1
+            { 8, 7, 8, 4, 3 }, // 3
+            { 5, 6, 7, 8, 3 }, // 2
+            { 4, 2, 3, 6, 4 }, // 4
+            { 5, 2, 4, 2, 3 }  // 3
+            };
+            int res = ds.Calculate(array);
 
-            CollectionAssert.AreEqual(ans, res);
+            Assert.AreEqual(13, res);
         }
     }
 }
