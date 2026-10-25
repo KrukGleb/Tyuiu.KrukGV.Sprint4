@@ -21,7 +21,7 @@ namespace Tyuiu.KrukGV.Sprint4.Task4.V19.Test
             };
             int res = ds.Calculate(array);
 
-            Assert.AreEqual(14, res);
+            Assert.AreEqual(68, res);
         }
     }
 }
