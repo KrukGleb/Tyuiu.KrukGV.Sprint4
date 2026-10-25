@@ -1,0 +1,42 @@
+﻿<Solution>
+  <Folder Name="/Task0/">
+    <Project Path="Tyuiu.KrukGV.Sprint4.Task0.V30.Lib/Tyuiu.KrukGV.Sprint4.Task0.V30.Lib.csproj" />
+    <Project Path="Tyuiu.KrukGV.Sprint4.Task0.V30.Test/Tyuiu.KrukGV.Sprint4.Task0.V30.Test.csproj" />
+    <Project Path="Tyuiu.KrukGV.Sprint4.Task0.V30/Tyuiu.KrukGV.Sprint4.Task0.V30.csproj" />
+  </Folder>
+  <Folder Name="/Task1/">
+    <Project Path="Tyuiu.KrukGV.Sprint4.Task1.V2.Lib/Tyuiu.KrukGV.Sprint4.Task1.V2.Lib.csproj" />
+    <Project Path="Tyuiu.KrukGV.Sprint4.Task1.V2.Test/Tyuiu.KrukGV.Sprint4.Task1.V2.Test.csproj" />
+    <Project Path="Tyuiu.KrukGV.Sprint4.Task1.V2/Tyuiu.KrukGV.Sprint4.Task1.V2.csproj" />
+  </Folder>
+  <Folder Name="/Task2/">
+    <Project Path="Tyuiu.KrukGV.Sprint4.Task2.V17.Lib/Tyuiu.KrukGV.Sprint4.Task2.V17.Lib.csproj" />
+    <Project Path="Tyuiu.KrukGV.Sprint4.Task2.V17.Test/Tyuiu.KrukGV.Sprint4.Task2.V17.Test.csproj" />
+    <Project Path="Tyuiu.KrukGV.Sprint4.Task2.V17/Tyuiu.KrukGV.Sprint4.Task2.V17.csproj" />
+  </Folder>
+  <Folder Name="/Task3/">
+    <Project Path="Tyuiu.KrukGV.Sprint4.Task3.V23.Lib/Tyuiu.KrukGV.Sprint4.Task3.V23.Lib.csproj" />
+    <Project Path="Tyuiu.KrukGV.Sprint4.Task3.V23.Test/Tyuiu.KrukGV.Sprint4.Task3.V23.Test.csproj" />
+    <Project Path="Tyuiu.KrukGV.Sprint4.Task3.V23/Tyuiu.KrukGV.Sprint4.Task3.V23.csproj" />
+  </Folder>
+  <Folder Name="/Task4/">
+    <Project Path="Tyuiu.KrukGV.Sprint4.Task4.V19.Lib/Tyuiu.KrukGV.Sprint4.Task4.V19.Lib.csproj" />
+    <Project Path="Tyuiu.KrukGV.Sprint4.Task4.V19.Test/Tyuiu.KrukGV.Sprint4.Task4.V19.Test.csproj" />
+    <Project Path="Tyuiu.KrukGV.Sprint4.Task4.V19/Tyuiu.KrukGV.Sprint4.Task4.V19.csproj" />
+  </Folder>
+  <Folder Name="/Task5/">
+    <Project Path="Tyuiu.KrukGV.Sprint4.Task5.V21.Lib/Tyuiu.KrukGV.Sprint4.Task5.V21.Lib.csproj" />
+    <Project Path="Tyuiu.KrukGV.Sprint4.Task5.V21.Test/Tyuiu.KrukGV.Sprint4.Task5.V21.Test.csproj" />
+    <Project Path="Tyuiu.KrukGV.Sprint4.Task5.V21/Tyuiu.KrukGV.Sprint4.Task5.V21.csproj" />
+  </Folder>
+  <Folder Name="/Task6/">
+    <Project Path="Tyuiu.KrukGV.Sprint4.Task6.V16.Lib/Tyuiu.KrukGV.Sprint4.Task6.V16.Lib.csproj" />
+    <Project Path="Tyuiu.KrukGV.Sprint4.Task6.V16.Test/Tyuiu.KrukGV.Sprint4.Task6.V16.Test.csproj" />
+    <Project Path="Tyuiu.KrukGV.Sprint4.Task6.V16/Tyuiu.KrukGV.Sprint4.Task6.V16.csproj" />
+  </Folder>
+  <Folder Name="/Task7/">
+    <Project Path="Tyuiu.KrukGV.Sprint4.Task7.V17.Lib/Tyuiu.KrukGV.Sprint4.Task7.V17.Lib.csproj" />
+    <Project Path="Tyuiu.KrukGV.Sprint4.Task7.V17.Test/Tyuiu.KrukGV.Sprint4.Task7.V17.Test.csproj" />
+    <Project Path="Tyuiu.KrukGV.Sprint4.Task7.V17/Tyuiu.KrukGV.Sprint4.Task7.V17.csproj" />
+  </Folder>
+</Solution>
