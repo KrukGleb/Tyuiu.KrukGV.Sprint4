@@ -11,7 +11,7 @@ namespace Tyuiu.KrukGV.Sprint4.Task5.V21.Lib
 
             for(int i = 0; i < len; i++)
                 for (int j = 0; j < len; j++)
-                    if (matrix[i, j] < 0)
+                    if (matrix[i, j] > 0)
                         res[i, j] = 1;
                     else
                         res[i, j] = matrix[i,j];
