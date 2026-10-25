@@ -1,19 +1,17 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint2;
+﻿using tyuiu.cources.programming.interfaces.Sprint4;
 
 namespace Tyuiu.KrukGV.Sprint4.Task1.V2.Lib
 {
-    public class DataService : ISprint2Task0V17
+    public class DataService : ISprint4Task1V2
     {
-        public bool[] GetCompareOperations(int x, int y)
+        public int Calculate(int[] array)
         {
-            bool[] res = new bool[6];
-            res[0] = x - 310 == y;
-            res[1] = x - 310 != y;
-            res[2] = x < y;
-            res[3] = y > x;
-            res[4] = x <= y;
-            res[5] = y >= x;
-            return res;
+            var sum = 0;
+            for (int i = 0; i < array.Length; i++)
+                if (array[i] % 2 != 0)
+                    sum += array[i];
+
+            return sum;
         }
     }
 }
