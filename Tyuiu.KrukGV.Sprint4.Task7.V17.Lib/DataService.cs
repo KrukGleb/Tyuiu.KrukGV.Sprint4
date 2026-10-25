@@ -1,19 +1,25 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint2;
+﻿using tyuiu.cources.programming.interfaces.Sprint4;
 
 namespace Tyuiu.KrukGV.Sprint4.Task7.V17.Lib
 {
-    public class DataService : ISprint2Task0V17
+    public class DataService : ISprint4Task7V17
     {
-        public bool[] GetCompareOperations(int x, int y)
+        public int Calculate(int n, int m, string value)
         {
-            bool[] res = new bool[6];
-            res[0] = x - 310 == y;
-            res[1] = x - 310 != y;
-            res[2] = x < y;
-            res[3] = y > x;
-            res[4] = x <= y;
-            res[5] = y >= x;
-            return res;
+            int[,] mtrx = new int[n, m];
+            int count = 0;
+            for (int i = 0; i < n; i++)
+                for (int j = 0; j < m; j++)
+                { 
+                    mtrx[i, j] = int.Parse(value[i * 3 + j].ToString());
+                    if (mtrx[i, j] % 2 == 0)
+                        count++;
+                }
+
+            return count;
+                
+            
         }
+
     }
 }

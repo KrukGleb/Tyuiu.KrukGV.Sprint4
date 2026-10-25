@@ -14,32 +14,27 @@ namespace Tyuiu.KrukGV.Sprint4.Task7.V17
             Console.WriteLine("* Спринт #4                                                               *");
             Console.WriteLine("* Тема: Базовые навыки работы в С#                                        *");
             Console.WriteLine("* Задание #7                                                              *");
-            Console.WriteLine("* Вариант #17                                                              *");
+            Console.WriteLine("* Вариант #17                                                             *");
             Console.WriteLine("* Выполнил: Крук Глеб Владиславович | НТм25-1                             *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу из операций сравнений (==, !=, <, >, <=, >=,         *");
-            Console.WriteLine("* последовательность операций не должна нарушаться) и арифметических      *");
-            Console.WriteLine("* выражений, которая вернет логическую последовательность                 *");
+            Console.WriteLine("* Дана строка из одноразрядных цифр \"753159864\". Преобразуйте ее в      *");
+            Console.WriteLine("* матрицу 3 на 3 и подсчитайте количество четных чисел                    *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
 
-            var x = 1065;
-            var y = 755;
-            Console.WriteLine("x = " + x);
-            Console.WriteLine("y = " + y);
+
+            Console.WriteLine("str = " + "753159864");
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            bool[] res = ds.GetCompareOperations(x, y);
-            foreach (var op in res) 
-            {
-                Console.WriteLine(op);
-            }
+            int res = ds.Calculate(3, 3, "753159864");
+            Console.WriteLine(res);
+
             Console.ReadKey();
         }
     }
