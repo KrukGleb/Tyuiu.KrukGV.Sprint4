@@ -10,10 +10,10 @@ namespace Tyuiu.KrukGV.Sprint4.Task6.V16.Test
         public void ValidExpression()
         {
             DataService ds = new DataService();
-            bool[] res = ds.GetCompareOperations(1065, 755);
-            bool[] ans = { true, false, false, false, false, false };
+            string[] data = { "Автомобиль", "Велосипед", "Самолет", "Поезд", "Трамвай", "Троллейбус", "Метро" };
+            string[] res = ds.Calculate(data);
 
-            CollectionAssert.AreEqual(ans, res);
+            CollectionAssert.AreEqual(new[] { "Самолет", "Трамвай" }, res);
         }
     }
 }

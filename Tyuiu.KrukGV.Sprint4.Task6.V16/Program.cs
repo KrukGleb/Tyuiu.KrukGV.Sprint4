@@ -18,26 +18,30 @@ namespace Tyuiu.KrukGV.Sprint4.Task6.V16
             Console.WriteLine("* Выполнил: Крук Глеб Владиславович | НТм25-1                             *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Дан одномерный целочисленный массив на 10 элементов заполненный         *");
-            Console.WriteLine("* статическими значениями в диапазоне от 0 до 9                           *");
-            Console.WriteLine("* подсчитать сумму четных элементов массива.                              *");
-            Console.WriteLine("* {9, 8, 4, 6, 9, 4, 3, 6, 1, 2}                                          *");
+            Console.WriteLine("* Дан строковый массив данных  ,                                          *");
+            Console.WriteLine("* [\"Автомобиль\", ..., \"Метро\"], используя класс Array, выведите       *");
+            Console.WriteLine("* используя класс Array, выведите элементы массива, длина которых равна   *");
+            Console.WriteLine("* 7 символам.                                                             *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
 
-            int[] data = { 9, 8, 4, 6, 9, 4, 3, 6, 1, 2 };
-            Console.WriteLine("data = " + data);
+            string[] data = { "Автомобиль", "Велосипед", "Самолет", "Поезд", "Трамвай", "Троллейбус", "Метро" };
+            var len = data.Length;
+            for (int i = 0; i < len; i++)
+                Console.Write(data[i] + ' ');
+
+
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            bool[] res = ds.GetCompareOperations(x, y);
-            foreach (var op in res) 
-            {
-                Console.WriteLine(op);
-            }
+            string[] res = ds.Calculate(data);
+            len = res.Length;
+            for (int i = 0; i < len; i++)
+                Console.Write(res[i] + ' ');
+
             Console.ReadKey();
         }
     }
