@@ -26,27 +26,30 @@ namespace Tyuiu.KrukGV.Sprint4.Task3.V23
             Console.WriteLine("***************************************************************************");
 
 
-            int[,] array = new int[,]
-            {
-            { 7, 5, 5, 6, 7 },
-            { 8, 7, 8, 4, 3 },
-            { 5, 6, 7, 8, 3 },
-            { 4, 2, 3, 6, 4 },
-            { 5, 2, 4, 2, 3 }
-            };
+            Console.Write("Введите количество строк в массиве: ");
+            int rows = Convert.ToInt32(Console.ReadLine());
 
-            for (int i = 0; i < array.GetLength(0); i++)
+            Console.Write("Введите количество столбцов в массиве: ");
+            int columns = Convert.ToInt32(Console.ReadLine());
+
+            int[,] mtrx = new int[rows, columns];
+
+            for (int i = 0; i < rows; i++)
             {
-                for (int j = 0; j < array.GetLength(1); j++)
-                    Console.Write(array[i, j] + " ");
+                for (int j = 0; j < columns; j++)
+                {
+                    Console.Write($"Введите {i},{j} элемент массива: ");
+                    mtrx[i, j] = Convert.ToInt32(Console.ReadLine());
+                }
                 Console.WriteLine();
             }
+        
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            int res = ds.Calculate(array);
+            int res = ds.Calculate(mtrx);
             Console.WriteLine(res);
             
             Console.ReadKey();
